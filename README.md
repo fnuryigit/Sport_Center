@@ -31,6 +31,10 @@ Projeyi kendi bilgisayarında çalıştırmak için:
 ![Ana sayfa tasarımı](images_2/1.png)
 
 ![Özellikler bölümü](images_2/2.png)
+![Review bölümü](images_2/3.png)
+![Contact bölümü](images_2/4.png)
+
+
 
 
 
