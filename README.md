@@ -24,6 +24,15 @@ Projeyi kendi bilgisayarında çalıştırmak için:
    ```bash
    git clone https://github.com/fnuryigit/Sport_Center.git
 
+...
+
+## Görseller
+
+![Ana sayfa tasarımı](images2/1.png)
+
+![Özellikler bölümü](images2/2.png)
+
+
 
 
 
