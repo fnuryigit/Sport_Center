@@ -15,7 +15,7 @@ Proje Netlify üzerinden canlıya alınmıştır:
 ##  Kullanılan Teknolojiler
 - **HTML5**  
 - **CSS3**  
-- **JavaScript **  
+- JavaScript
 
 
 
