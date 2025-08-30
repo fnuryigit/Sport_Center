@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sport Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="top" class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">
+        <img src="images/logo.png" alt="Powerfull logo">
+      
+    </a>
+      <button class="nav-toggle" aria-label="Menüyü Aç/Kapat">☰</button>
+     <nav class="nav-links">
+  <a href="#home">Home</a>
+  <a href="#classes">Classes</a>
+  <a href="#trainers">Trainers</a>
+  <a href="#review">Review</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn-join">JOIN US</a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+        <a class="btn" href="#classes">POWERFULL</a>
+      <h1>Group </h1>
+      <h1>Practice</h1>
+      <h1>With Trainer </h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vero veniam, facilis, cumque delectus tenetur perferendis voluptatem eum harum ad corporis repellendus quae totam deserunt laudantium enim voluptates dignissimos distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt quos excepturi quis cum assumenda, ea incidunt maxime velit, accusantium obcaecati alias ducimus provident!</p>
+      <div class="hero-buttons">
+  <a class="btn" href="#classes">Sign Up</a>
+  <a class="btn btn-details" href="#classes">Details</a>
+</div>  
+    </div>
+  </section>
+
+
+
+  <!-- FEATURES / INFO BOXES -->
+<section class="features">
+  <div class="container features-container">
+    <div class="feature-box">
+      <h2>325</h2>
+      <p>COURSE</p>
+    </div>
+    <div class="feature-box">
+      <h2>405</h2>
+      <p>WORK OUT</p>
+    </div>
+    <div class="feature-box">
+      <h2>305</h2>
+      <p>WORKING HOUR</p>
+    </div>
+    <div class="feature-box">
+      <h2>705</h2>
+      <p>HAPPY CLIENT</p>
+    </div>
+  </div>
+</section>
+
+<!-- OUR CLASSES -->
+<section id="classes" class="section">
+  <div class="container">
+    <h2>Our Classes</h2>
+    <p>Here you can find a variety of classes designed to improve your strength, flexibility, and overall fitness.There is no perfect moment to start your time is now.</p>
+
+    <!-- CLASSES / FILTER BUTTONS -->
+    <div class="class-buttons">
+      <button class="class-btn" data-target="yoga">Yoga</button>
+      <button class="class-btn" data-target="group">Group</button>
+      <button class="class-btn" data-target="solo">Solo</button>
+      <button class="class-btn" data-target="stretching">Stretching</button>
+    </div>
+
+    <!-- YOGA -->
+    <section id="yoga" class="class-section active">
+      <div class="class-text">
+        <h3>Why are your yoga</h3>
+        <p>Yoga improves not just your body but also your mind and spirit.With expert instruction blending ancient traditions with modern insights, we support you in every stage.</p>
+        <h3>When come yoga your time</h3>
+        <p>Sunday - Monday 08:00am - 10:00am</p>
+        <p>Monday - Friday: 13:00am - 15:00am</p>
+        <p>Tuesday - Saturday: 10:00am- 12:00am </p>
+      </div>
+      <div class="yoga-image">
+        <img src="images/yoga.jpg" alt="Yoga Practice">
+      </div>
+    </section>
+
+    <!-- GROUP -->
+    <section id="group" class="class-section">
+      <div class="class-text">
+        <h3>Why Group Training?</h3>
+        <p>Group classes motivate you with shared energy and teamwork.</p>
+        <p>Group workouts bring motivation, energy, and accountability. Train
+          with others, share the challenge, and celebrate your progress
+          together.</p>
+        <h3>Group Schedule</h3>
+        <p>Monday - Wednesday 09:00am - 11:00am</p>
+        <p>Friday: 17:00pm - 19:00pm</p>
+      </div>
+      <div class="class-image">
+        <img src="images/group.webp" alt="Group Training">
+      </div>
+    </section>
+
+    <!-- SOLO -->
+    <section id="solo" class="class-section">
+      <div class="class-text">
+        <h3>Why Solo Training?</h3>
+        <p>Solo classes focus completely on you with personal guidance.</p>
+        <p>For those who prefer privacy and full focus, solo training is the best
+          choice. Tailored programs ensure you progress at your own pace.</p>
+        <h3>Solo Schedule</h3>
+        <p>Everyday: Flexible hours with personal booking</p>
+      </div>
+      <div class="class-image">
+        <img src="images/solo.jpg" alt="Solo Training">
+      </div>
+    </section>
+
+    <!-- STRETCHING -->
+    <section id="stretching" class="class-section">
+      <div class="class-text">
+        <h3>Stretching Classes</h3>
+        <p>Improve mobility, prevent injuries, and feel lighter with guided
+          stretching sessions.</p>
+        <h3>Stretching Schedule</h3>
+        <p>Tuesday - Thursday 11:00am - 12:00pm</p>
+        <p>Saturday: 15:00pm - 16:00pm</p>
+      </div>
+      <div class="class-image">
+        <img src="images/stret.webp" alt="Stretching Session" />
+      </div>
+    </section>
+  </div>
+</section>
+
+
+
+ <!-- BMI -->
+<section id="bmi" class="section">
+  <div class="container bmi-wrap">
+    <div class="bmi-section">
+      <div class="bmi-text">
+        <h2>BMI Calculator</h2>
+        <p>Our BMI Calculator helps you quickly determine your Body Mass Index and understand whether your weight is in a healthy range.</p>
+        <p>Tracking your BMI regularly can guide your fitness journey, helping you set realistic goals and maintain a balanced lifestyle.</p>
+
+        <form id="bmiForm" class="bmi-form" onsubmit="return false;">
+          <label>
+            Kilo (kg)
+            <input type="number" id="kg" min="1" step="0.1" placeholder="Örn: 64.5" required />
+          </label>
+          <label>
+            Boy (cm)
+            <input type="number" id="cm" min="50" step="0.1" placeholder="Örn: 170" required />
+          </label>
+          <button id="bmiBtn" class="btn" type="button">Hesapla</button>
+        </form>
+
+        <div class="bmi-output">
+          <div class="arrow">▼</div>
+          <p id="bmiResult">Sonuç burada görünecek</p>
+        </div>
+      </div>
+
+      <div class="bmi-image">
+        <img src="images/bmi-index.jpg" alt="BMI Calculator">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="section alt">
+    <div class="container">
+      <h2>Our Best Trainers</h2>
+      <p>So with the internet making it possible to work with a personal trainer and other famous fitness people anywhere in the world, who are the best of the best? </p>
+      <div class="trainers-grid">
+        <article class="trainer-card">
+          <img src="images/trainer1.jpg" alt="Trainer 1" />
+          <div class="overlay">
+            <h3>Alex Johnson</h3>
+            <p>Strength & Conditioning</p>
+          </div>
+        </article>
+
+        <article class="trainer-card">
+          <img src="images/trainer2.jpg" alt="Trainer 2" />
+          <div class="overlay">
+            <h3>Chris Walker</h3>
+            <p>Boxing Coach</p>
+          </div>
+        </article>
+
+        <article class="trainer-card">
+          <img src="images/trainer3.jpg" alt="Trainer 3" />
+          <div class="overlay">
+            <h3>Maya Lee </h3>
+            <p>Yoga & Mobility</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PURCHAES -->
+  <section id="trainers" class="section alt">
+    <div class="container">
+      <h2>PURCHAES FROM US </h2>
+      <p>We offer the best range of running, cycling, gym, fitness and outdoor products. Discover our range of road and mountain bikes, running shoes and running ...
+</p>
+      <div class="trainers-grid">
+        <article class="trainer-card">
+  <img src="images/purchase1.jpg" alt="Kettlebell 5kg" />
+  <div class="overlay"></div>
+  
+  <div class="product-info">
+    <h3>Kettlebell / 5 kg</h3>
+    <p class="price"><span class="old-price">89.99 €</span> <span class="new-price">55.99 €</span></p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</article>
+
+<article class="trainer-card">
+  <img src="images/purchase2.jpg" alt="Kettlebell 5kg" />
+  <div class="overlay"></div>
+  
+  <div class="product-info">
+    <h3>Treadmill</h3>
+    <p class="price"><span class="old-price">899.99 €</span> <span class="new-price">559.99 €</span></p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</article>
+
+
+<article class="trainer-card">
+  <img src="images/purchase3.jpg" alt="Kettlebell 5kg" />
+  <div class="overlay"></div>
+  
+  <div class="product-info">
+    <h3>Adjustable Dumbell</h3>
+    <p class="price"><span class="old-price">99.99 €</span> <span class="new-price">75.99 €</span></p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</article>
+
+
+
+
+<article class="trainer-card">
+  <img src="images/purchase4.jpg" alt="Kettlebell 5kg" />
+  <div class="overlay"></div>
+  
+  <div class="product-info">
+    <h3>Kettlebell / 3 kg</h3>
+    <p class="price"><span class="old-price">89.99 €</span> <span class="new-price">55.99 €</span></p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+</article>
+   
+      </div>
+    </div>
+  </section>
+
+
+  <!-- REVIEW / CLIENT -->
+<section id="review" class="review-section">
+  <div class="container text-center">
+    <h2>REVIEW CLIENT</h2>
+    <p>We pride ourselves on delivering excellent service and client satisfaction.</p>
+
+    <div class="reviews-grid">
+   
+      <div class="review-card">
+        <div class="ceo-info">
+          <img src="images/client1.jpg" alt="CEO 1" />
+          <div class="ceo-text">
+            <h3>Alex Johnson</h3>
+            <p>CEO, Company A</p>
+          </div>
+        </div>
+        <div class="review-box">
+          <p>"Amazing service! Highly recommend to anyone looking for quality.I've found that using social proof notification increases my conversion rate because it provides potential customers with verification that others have chosen to do business with me."</p>
+        </div>
+      </div>
+
+    
+      <div class="review-card">
+        <div class="ceo-info">
+          <img src="images/client2.jpg" alt="CEO 2" />
+          <div class="ceo-text">
+            <h3>Jessy Walker</h3>
+            <p>CEO, Company B</p>
+          </div>
+        </div>
+        <div class="review-box">
+          <p>"Professional and reliable. Our expectations were exceeded! I joined this gym a year ago, and it's been the best decision I ever made. The trainers are incredibly knowledgeable and supportive, and I've seen amazing results. Amazing service! Highly recommend  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT US -->
+<section id="contact" class="section">
+  <div class="container">
+ 
+    <h2>Contact Us</h2>
+    <p>We are always ready to assist you with your queries and support requests.</p>
+    <p>Reach out to us for more information or to schedule a consultation.</p>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="contact-info">
+          <div class="info-item"><strong>Mobile:</strong> +1 234 567 890</div>
+          <div class="info-item"><strong>Email:</strong> info@powerfull.com</div>
+        </div>
+
+        <h3>Make an Appointment</h3>
+        <form class="appointment-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="contact-right">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019356882123!2d-122.41941518468228!3d37.77492977975961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808caa6ed8d1%3A0x57e6ecab3f42c9a0!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2str!4v1693294841234!5m2!1sen!2str" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <img src="images/logo.png" alt="Powerfull Logo" class="footer-logo" />
+      <p> We provide the best fitness training programs to help you stay
+        healthy, motivated, and strong.</p>
+      
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-middle">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h3>Helpful Links</h3>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
