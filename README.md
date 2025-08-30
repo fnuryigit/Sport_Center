@@ -28,9 +28,9 @@ Projeyi kendi bilgisayarında çalıştırmak için:
 
 ## Görseller
 
-![Ana sayfa tasarımı](images2/1.png)
+![Ana sayfa tasarımı](images_2/1.png)
 
-![Özellikler bölümü](images2/2.png)
+![Özellikler bölümü](images_2/2.png)
 
 
 
