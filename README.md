@@ -1,6 +1,6 @@
 # Sport Center
 
-Bu proje, modern bir spor merkezi web sitesi tasarımıdır. Kullanıcı dostu arayüzü ve responsive (mobil uyumlu) yapısıyla, spor merkezi hakkında bilgi almak isteyen ziyaretçilere kolaylık sağlar.
+Bu proje, Patika bitirme projesi kapsamında hazırlanan bir spor merkezi web sitesi tasarımıdır. 
 
 ##  Live Demo
 Proje Netlify üzerinden canlıya alınmıştır:  
@@ -16,15 +16,8 @@ Proje Netlify üzerinden canlıya alınmıştır:
 - **HTML5**  
 - **CSS3**  
 - **Bootstrap 5**  
+-JavaScript
 
-## ⚙ Kurulum & Çalıştırma
-Projeyi kendi bilgisayarında çalıştırmak için:  
-
-1. Bu repoyu klonla:  
-   ```bash
-   git clone https://github.com/fnuryigit/Sport_Center.git
-
-...
 
 ## Görseller
 
