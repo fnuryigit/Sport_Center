@@ -52,24 +52,44 @@ const kgInput = document.getElementById('kg');
 const cmInput = document.getElementById('cm');
 const bmiBtn  = document.getElementById('bmiBtn');
 const bmiOut  = document.getElementById('bmiResult');
+const arrowEl = document.getElementById('bmiArrow');
+
+
+function toNumber(v) {
+  return parseFloat(String(v).replace(',', '.'));
+}
 
 function categorize(bmi) {
-  if (bmi < 18.5) return 'Zayıf';
+  if (bmi < 18.5) return 'Underweight';
   if (bmi < 25)   return 'Normal';
-  if (bmi < 30)   return 'Fazla kilolu';
-  return 'Obez';
+  if (bmi < 30)   return 'Overweight';
+  if (bmi < 35)   return 'Obese';
+  return 'Extremely Obese';
+}
+
+
+function arrowLeftPercent(bmi) {
+  if (bmi < 18.5) return '10%';  
+  if (bmi < 25)   return '30%'; 
+  if (bmi < 30)   return '50%';  
+  if (bmi < 35)   return '70%';  
+  return '90%';                  
 }
 
 bmiBtn?.addEventListener('click', () => {
-  const kg = parseFloat(kgInput.value);
-  const cm = parseFloat(cmInput.value);
+  const kg = toNumber(kgInput.value);
+  const cm = toNumber(cmInput.value);
+
   if (!kg || !cm || kg <= 0 || cm <= 0) {
     bmiOut.textContent = 'Lütfen geçerli kilo ve boy girin.';
     return;
-    }
+  }
+
   const m = cm / 100;
   const bmi = kg / (m * m);
+
   bmiOut.textContent = `BMI: ${bmi.toFixed(1)} (${categorize(bmi)})`;
+  arrowEl.style.left = arrowLeftPercent(bmi);
 });
 
 // CLASSES: yoga/group/solo/stretching butonları
@@ -87,4 +107,5 @@ buttons.forEach((btn) => {
     if (targetSection) targetSection.classList.add("active");
   });
 });
+
 
